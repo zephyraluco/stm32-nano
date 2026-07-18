@@ -102,6 +102,23 @@ SECTIONS
     . = ALIGN(4);
   } >FLASH
 
+  .rti_fn :
+  {
+    . = ALIGN(4);
+    KEEP(*(SORT(.rti_fn*)))
+    . = ALIGN(4);
+  } >FLASH
+
+  /* RT-Thread FinSH shell commands */
+  .finsh_syscall :
+  {
+    . = ALIGN(4);
+    __fsymtab_start = .;
+    KEEP(*(FSymTab))
+    __fsymtab_end = .;
+    . = ALIGN(4);
+  } >FLASH
+
   .ARM.extab (READONLY) : /* The "READONLY" keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
     . = ALIGN(4);
