@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32 Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/stm32-nano.elf",
+            "servertype": "openocd",
+            "device": "STM32F103xB",
+            "configFiles": [
+                "${workspaceFolder}/stlink.cfg",
+                "${workspaceFolder}/stm32f1x.cfg"
+            ],
+            "gdbPath": "arm-none-eabi-gdb",
+            // "svdFile": "${workspaceFolder}/STM32F103x.svd",  // 可选，下载后取消注释
+            // "runToMain": true,
+            "showDevDebugOutput": "none",
+            "preLaunchTask": "Build (Debug)"
+        }
+    ]
+}
