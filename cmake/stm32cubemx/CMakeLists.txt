@@ -32,6 +32,7 @@ set(MX_Application_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../startup_stm32f103xb.s
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/thread_sample.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/idle_hook_sample.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/scheduler_hook_sample.c
 )
 
 # STM32 HAL/LL Drivers

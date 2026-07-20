@@ -67,7 +67,7 @@
 
 // <c1>using idle hook function
 //  <i>using idle hook function
-//#define RT_HOOK_USING_FUNC_PTR
+#define RT_HOOK_USING_FUNC_PTR
 // </c>
 // </h>
 
