@@ -35,6 +35,8 @@ set(MX_Application_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/scheduler_hook_sample.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/event_sample.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/mailbox_sample.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/msgq_sample.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/mutex_sample.c
 )
 
 # STM32 HAL/LL Drivers
